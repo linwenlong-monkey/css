@@ -1,1 +1,27 @@
-font-size.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>设置字体大小</title>
+	<style type="text/css">
+		p {
+			font-size: 20px;
+		}
+		/*1em = 16px*/
+		p.em {
+			font-size: 0.18em; 
+		}
+		/*原本的字体乘以百分比*/
+		p.percent {
+			font-size: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<p>设置字体大小</p>
+
+	<p class="em">em设置字体大小</p>
+
+	<p class="percent">百分比设置字体</p>
+</body>
+</html>

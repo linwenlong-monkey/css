@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浮动</title>
+	<style type="text/css">
+		/*为了让块元素在一行显示*/
+
+		div.float {
+			margin-left: 10px;
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+
+		.clear {
+			height: 200px;
+			width: 400px;
+		}
+
+		/*清楚浮动的几种方法
+			1.在具有浮动的盒子的父盒子用overflow：hidden；缺点：兼容性不好
+			2.在具有浮动的盒子的尾部添加一个内容为空的div的盒子并设置clear：both
+			3.伪元素标签方法
+			4.双伪元素
+		*/
+
+		/*.clear {
+			clear: both;
+		}
+
+		.father {
+			overflow: hidden;
+		}*/
+
+		.clearfix::after {
+			content: "";
+			display: block;
+			clear: both;
+
+			height: 0;
+			visibility: hidden;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="father clearfix">
+		<div class="float" style="background-color: red"></div>
+		<div class="float" style="background-color: blue"></div>
+		<div class="float" style="background-color: green"></div>
+	</div>
+	
+	<div class="clear" style="background-color: black"></div>
+	
+
+</body>
+</html>
