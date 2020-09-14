@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div {
+			background-color: red;
+			display: inline-block;
+			width: 200px;
+			height: 60px;
+			text-align: center;
+			line-height: 60px;
+			color: white;
+			font-size: 1.2em;
+			border-radius: 4.0px;
+		}
+
+		span {
+			transition: 1.0s;
+			display: inline-block;
+		}
+
+		span::after {
+			content: "»";
+			color: white; 
+			display: inline-block;
+			 opacity: 0;
+			  top: 0;
+			  right: -20px;
+			opacity: 0;
+			transition: 1.0s;
+
+		}
+
+		div:hover span {
+			padding-right: 20px; 
+			background-color: black;
+		}
+
+		div:hover span::after {
+			opacity: 1;
+			/*padding-right: 20px;*/
+		}
+
+	</style>
+</head>
+<body>
+
+	<div>
+		<span>Hover</span>
+	</div>
+
+</body>
+</html>

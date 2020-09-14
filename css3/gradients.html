@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		/*
+			gradients：线性渐变:background-image: linear-gradient(direction, color-stop1, color-stop2, ...);;
+
+			径向渐变： background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+
+			repeating-radial-gradient()
+		*/
+		div {
+			width: 200px;height: 200px;display: inline-block;
+			text-align: center;line-height: 200px;
+		}
+
+		#example {
+			background-image: linear-gradient(red,blue);/*默认从上到下*/	
+		}
+
+		#example1 {
+			background-image: linear-gradient(to right, red,blue);
+		}
+
+		#example2 {
+			background-image: linear-gradient(to bottom right,red,blue);
+		}
+
+		#example3 {
+			background-image: repeating-linear-gradient(yellow 30%, green 50%);
+		}
+
+
+		#grad {
+ 			 background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div id="example">
+		默认从上到下
+	</div>
+	<div id="example1">
+		从左到右
+	</div>
+	<div id="example2">
+		对角
+	</div>
+
+	<div id="example3">
+		百分比
+	</div>
+
+	<div id="grad">
+		径向渐变
+	</div>
+
+</body>
+</html>

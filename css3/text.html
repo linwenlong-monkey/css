@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文本效果</title>
+	<style type="text/css">
+
+
+		.text_shadow {
+			text-shadow: 2px 2px 2px rgb(0,0,0);
+		}
+
+		.box_shadow {
+			margin-top: 20px;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			box-shadow: 5px 5px 2px black;
+		}
+
+		/*text-overflow clip 文本溢出*/
+
+
+		/*word-wrap 单词换行*/
+		p.test
+		{
+			width:11em; 
+			border:1px solid #000000;
+			word-wrap:break-word;
+		}
+
+		/*word-break:keep-all,break-all; 单词拆分*/
+
+		p.test1
+		{
+			width:9em; 
+			border:1px solid #000000;
+			word-break:keep-all;/*不拆分*/
+		}
+
+		p.test2
+		{
+			width:9em; 
+			border:1px solid #000000;
+			word-break:break-all;/*拆分*/
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="text_shadow">文字阴影</div>
+	<div class="box_shadow"></div>
+
+	<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+	<p class="test1"> This paragraph contains some text. This line will-break-at-hyphenates.</p>
+	<p class="test2"> This paragraph contains some text: The lines will break at any character.</p>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>边框图片</title>
+	<style type="text/css">
+
+	/*
+	border-image: source slice width outset repeat|initial|inherit;
+	
+	border-image-source	用于指定要用于绘制边框的图像的位置
+	border-image-slice	图像边界向内偏移
+	border-image-width	图像边界的宽度
+	border-image-outset	用于指定在边框外部绘制 border-image-area 的量
+	border-image-repeat	用于设置图像边界是否应重复（repeat）、拉伸（stretch）或铺满（round）。
+	*/
+		div {
+			width: 200px;
+			height: 100px;
+			border:15px solid transparent;
+			/*border-image: url("../images/border.png") 30 30 round;*/
+			-webkit-border-image: url("../images/border.png") 30 30 round;
+
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

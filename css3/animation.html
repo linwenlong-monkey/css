@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+	/*
+		animation:
+
+		要创建 CSS3 动画，你需要了解 @keyframes 规则。
+
+		@keyframes 规则是创建动画。
+
+		@keyframes 规则内指定一个 CSS 样式和动画将逐步从目前的样式更改为新的样式。;
+
+
+	*/
+		@keyframes myfirst {
+			from {width: 100px}
+			to {width: 500px}
+		}
+
+
+		/*您可以改变任意多的样式任意多的次数。
+
+请用百分比来规定变化发生的时间，或用关键词 "from" 和 "to"，等同于 0% 和 100%。
+
+0% 是动画的开始，100% 是动画的完成。
+
+为了得到最佳的浏览器支持，您应该始终定义 0% 和 100% 选择器。*/
+
+		@keyframes second {
+			0% {background: red; left:0px; top: 0px;}
+			25% {background: yellow; left: 200px;top: 0px}
+			50% {background: blue; left: 200px ; top: 200px}
+			75% {background: green; left:0px; top: 200px}
+			100% {background: red; left: 0px; top: 0px}
+		}
+
+		div {
+			width:100px;
+			height:100px;
+			background:red;
+			position:relative;
+			animation:second 5s;
+			-webkit-animation:second 5s; /* Safari and Chrome */
+		}
+
+		/*
+			
+		当在 @keyframes 创建动画，把它绑定到一个选择器，否则动画不会有任何效果。
+
+		指定至少这两个CSS3的动画属性绑定向一个选择器：
+		*/
+
+		div:hover {
+			animation: second 5s;
+			-webkit-animation:second 5s; /* Safari and Chrome */
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>

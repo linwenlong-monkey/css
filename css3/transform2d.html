@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2d变换</title>
+	<style type="text/css">
+		div {
+			width: 100px;height: 100px;background-color: red;margin-top: 10px;text-align: center;line-height: 100px;
+		}
+
+		/*
+			transform:
+			平移:translate(x,y);
+			旋转:rotate(angle deg);
+			缩放:scale(w的放大倍数,h的方法倍数);
+
+
+			matrix(n,n,n,n,n,n)	定义 2D 转换，使用六个值的矩阵。
+			translate(x,y)	定义 2D 转换，沿着 X 和 Y 轴移动元素。
+			translateX(n)	定义 2D 转换，沿着 X 轴移动元素。
+			translateY(n)	定义 2D 转换，沿着 Y 轴移动元素。
+			scale(x,y)	定义 2D 缩放转换，改变元素的宽度和高度。
+			scaleX(n)	定义 2D 缩放转换，改变元素的宽度。
+			scaleY(n)	定义 2D 缩放转换，改变元素的高度。
+			rotate(angle)	定义 2D 旋转，在参数中规定角度。
+			skew(x-angle,y-angle)	定义 2D 倾斜转换，沿着 X 和 Y 轴。
+			skewX(angle)	定义 2D 倾斜转换，沿着 X 轴。
+			skewY(angle)	定义 2D 倾斜转换，沿着 Y 轴。
+
+		*/
+
+		div.translate {
+			transform: translate(400px,0px);
+		}
+
+		div.rotate {
+			transform: rotate(20deg);
+		}
+
+		div.scale {
+			transform: scale(1.5,1);
+		}
+
+		div.xangle:hover {
+			transform: rotateY(120deg);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="translate">平移</div>
+	<div class="rotate">旋转</div>
+	<div class="scale">缩放</div>
+
+	<div class="xangle">x轴旋转</div>
+
+</body>
+</html>

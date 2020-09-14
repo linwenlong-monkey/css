@@ -1,0 +1,1348 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="https://a.mysteelcdn.com/libs/photoviewer/css/viewer.min.css"/>
+<!--        <link href="https://a.mysteelcdn.com/oilchem/wap/detail/css/content.css?v=202007231713" rel="stylesheet" type="text/css"/>-->
+        <link href="https://a.mysteelcdn.com/oilchem/wap/detail/css/comment.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+           body,table,td,tr,th,p,span,li,ul,ol,h1,h2,h3,h4,h5,h6,.article-content,#content {
+                color: white !important;background-color: black !important;
+            }
+        
+            html {
+                font-size: 625%;
+              }
+
+              body,
+              h1,
+              h2,
+              h3,
+              h4,
+              p,
+              ul,
+              ol,
+              form,
+              fieldset,
+              figure {
+                margin: 0;
+                padding: 0;
+              }
+
+              body {
+                background-color: #fff;
+                font-family: SimHei, "\5B8B\4F53", simsun, sans-serif;
+                font-size: 0.16rem;
+                color: #333;
+              }
+
+              ul,
+              ol,
+              li {
+                list-style: outside none none;
+              }
+
+              a {
+                text-decoration: none;
+              }
+
+              img {
+                display: block;
+                max-width: 100%;
+              }
+
+              div,
+              figure,
+              figcaption,
+              li,
+              section {
+                box-sizing: border-box;
+              }
+
+              .none {
+                display: none;
+              }
+
+              .clearfix:after {
+                content: '.';
+                display: block;
+                clear: both;
+                height: 0;
+                visibility: hidden;
+              }
+
+              .f-r {
+                float: right;
+              }
+
+              .allbg {
+                display: none;
+                background: #333;
+                filter: alpha(opacity=50);
+                opacity: 0.5;
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                z-index: 1;
+              }
+
+              .mian {
+                max-width: 100%;
+                padding: 0 0.1rem
+              }
+
+              .bg {
+                height: 0.12rem;
+                background: #f3f3f3;
+              }
+
+              .no-bor {
+                border: none !important;
+              }
+
+              .article-content {
+                padding: 0 4%;
+              }
+
+
+              .article-content h1 {
+                display: block;
+                line-height: 0.26rem;
+                font-size: 0.18rem;
+                font-weight: normal;
+                padding: 0 0.05rem;
+              }
+
+              .article-content .info {
+                padding: 0.07rem 0.05rem 0.06rem 0.05rem;
+                font-size: 0.13rem;
+                color: #bbb;
+                position: relative;
+              }
+
+              .article-content .info .read-icon {
+                background: url(//a.mysteelcdn.com/sms/4.0/icon01.png) no-repeat left 0px;
+                background-size: 0.16rem 0.14rem;
+                padding-left: 0.2rem;
+              }
+
+              .article-content .info .comment-icon {
+                background: url(//a.mysteelcdn.com/sms/4.0/icon02.png) no-repeat left 0px;
+                background-size: 0.16rem 0.16rem;
+                padding-left: 0.2rem;
+              }
+
+              .article-content .text,
+              .permissions {
+                font: 0.16rem/0.28rem "榛戜綋";
+                text-align: justify;
+                width: 100%;
+                word-break: break-all;
+                word-wrap: break-word;
+                overflow: hidden;
+              }
+
+              .article-content .text p {
+                text-indent: 0em;
+                margin: 0 0 0.08rem 0;
+              }
+
+              .article-content .text .btn-more {
+                display: inline-block;
+                width: 100%;
+                height: 0.42rem;
+                font: 0.18rem/0.42rem "Microsoft Yahei";
+                background: #65B0E9;
+                text-align: center;
+                color: #fff;
+                border-radius: 0.04rem;
+              }
+
+              .article-content img {
+                max-width: 100% !important;
+                height: auto !important;
+                display: block;
+              }
+
+              .article-content input[type="image"] {
+                max-width: 100% !important;
+                height: auto !important;
+                display: block;
+              }
+
+                .article-content table {
+                  width: 99% !important;
+                  height: auto !important;
+                  border-collapse: collapse;
+                  overflow-x: auto;
+                  word-break: normal;
+                  border: none !important;
+                  border-top: 1px solid #ccc !important;
+                  border-left: 1px solid #ccc !important;
+<!--                  word-break: break-all !important;-->
+                }
+
+                .article-content table tbody {
+                  min-width: 350px !important;
+                  height: auto !important;
+                }
+
+                .article-content table tbody tr td,
+                .article-content table th {
+                  line-height: 1.2em;
+                  padding: 0 10px;
+                  border: none !important;
+                  border-right: 1px solid #ccc !important;
+                  border-bottom: 1px solid #ccc !important;
+                  padding: 5px !important;
+                }
+
+                .article-content table p {
+                  text-indent: 0em !important;
+                }
+
+                .article-content table p font {
+                  white-space: nowrap;
+                }
+
+                .article-content table p.MsoNormal {
+                  white-space: nowrap;
+                }
+
+
+              .sendmail {
+                padding: 0.08rem;
+                border: 1px solid #F1BA84;
+                border-radius: 4px;
+                background: #FFFAF0;
+                margin-bottom: 0.1rem;
+                margin-top: 2px;
+              }
+
+              .sm-title {
+                font: 0.14rem/0.24rem "Microsoft Yahei";
+                font-weight: normal;
+                margin-bottom: 0.05rem;
+              }
+
+              .sm-text {
+                width: 54%;
+                height: 0.26rem;
+                font: 0.14rem/0.26rem "Microsoft Yahei";
+                border-radius: 0.06rem;
+                border: 1px solid #d2d2d2;
+                padding-left: 2%;
+                color: #d2d2d2;
+                margin: 0 2% 0 -2px;
+                -webkit-appearance: none;
+                vertical-align: middle;
+              }
+
+              .sm-btn {
+                width: 34%;
+                height: 0.32rem;
+                font: 0.16rem/0.32rem "Microsoft Yahei";
+                border: none;
+                background: #65B0E9;
+                color: #fff;
+                border-radius: 6px;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+              }
+
+              .award-box {
+                padding: 0.14rem;
+                font: 0.14rem/0.26rem "Microsoft Yahei";
+              }
+
+              .award-box .award-text {
+                width: 70%;
+                height: 0.26rem;
+                font: 0.14rem/0.26rem "Microsoft Yahei";
+                border-radius: 0.06rem;
+                border: 1px solid #65B0E9;
+                padding-left: 0.08rem;
+                color: #d2d2d2;
+                margin-right: 0.08rem;
+                -webkit-appearance: none;
+              }
+
+              .award-box a {
+                color: #65B0E9;
+              }
+
+              .title {
+                height: 0.35rem;
+                line-height: 0.35rem;
+                padding: 0.08rem 0;
+                border-bottom: 1px solid #DEDFE0;
+              }
+
+              .title h2 {
+                font-weight: normal;
+                font-size: 0.16rem;
+                height: 0.16rem;
+                line-height: 0.16rem;
+                padding-left: 0.1rem;
+                border-left: 0.05rem solid #7FA8D8;
+                color: #7FA8D8;
+              }
+
+              .title h2.t2 {
+                color: #7fa8d8;
+                border-left: 0.05rem solid #7fa8d8;
+              }
+
+              .title h2.t3 {
+                color: #ee7a7a;
+                border-left: 0.05rem solid #ee7a7a;
+              }
+
+              .article-ul {
+                padding-left: 0.1rem;
+              }
+
+              .article-ul li {
+                height: 0.4rem;
+                line-height: 0.4rem;
+                border-bottom: 1px solid #e6e6e6;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+
+              .article-ul li a {
+                color: #474747;
+              }
+
+              .img-box {
+                width: 100%;
+              }
+
+              .comment {
+                padding: 0.1rem;
+                width: 100%;
+                border-bottom: 1px solid #e4e3e1;
+                position: relative;
+              }
+
+              .comment .c-left {
+                float: left;
+                width: 0.6rem;
+                padding: 0 0.1rem;
+                position: relative;
+                margin-right: 0.1rem;
+              }
+
+              .comment .c-left .head-portrait {
+                width: 45px;
+                height: 45px;
+                border: 1px solid #e4e4e4;
+                border-radius: 50%;
+                max-width: 45px;
+              }
+
+              .comment .c-left .head-default {
+                width: 0.4rem;
+                height: 0.4rem;
+                border-radius: 50%;
+              }
+
+              .comment .c-left .tys {
+                width: 0.6rem;
+                height: 0.16rem;
+                position: absolute;
+                left: 0;
+                bottom: -0.09rem;
+              }
+
+              .comment .c-right {
+                width: 76%;
+                float: left;
+                line-height: 0.24rem;
+              }
+
+              .comment .c-right .nickname {
+                color: #7fa8d8;
+                font-size: 0.14rem;
+              }
+
+              .comment .c-right .time {
+                color: #999;
+                font-size: 0.12rem;
+              }
+
+              .comment .c-right .text {
+                color: #333;
+                font-size: 0.15rem;
+              }
+
+              .popup {
+                position: fixed;
+                top: 36%;
+                left: 50%;
+                width: 2.4rem;
+                margin-left: -1.2rem;
+                border-radius: 5px;
+                z-index: 2;
+                background: #fff;
+              }
+
+              .popup .p-title {
+                padding: 0.34rem 0;
+                text-align: center;
+                color: #737373;
+                font-size: 0.16rem;
+                border-bottom: 1px solid #e8e8e8;
+              }
+
+              .popup .p-share {
+                float: left;
+                display: block;
+                width: 50%;
+                height: 0.4rem;
+                font: 0.16rem/0.4rem "Microsoft Yahei";
+                text-align: center;
+                color: #6fb5ea;
+                border-right: 1px solid #e8e8e8;
+              }
+
+              .popup .p-cancel {
+                float: right;
+                display: block;
+                width: 49%;
+                height: 0.4rem;
+                font: 0.16rem/0.4rem "Microsoft Yahei";
+                text-align: center;
+                color: #6fb5ea;
+              }
+
+              .pop-up4 {
+                position: fixed;
+                left: 5%;
+                top: 30%;
+                width: 90%;
+                height: 1.7rem;
+                background: #fff;
+                z-index: 999;
+                padding: 2% 4%;
+                border-radius: 14px;
+              }
+
+              .pop-up4 .close {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0.4rem;
+                height: 0.4rem;
+                background: url(//a.mysteelcdn.com/sms/zxbg/close.png?v=20150617) center top no-repeat;
+                -moz-background-size: 100% 100%;
+                background-size: 100% 100%;
+              }
+
+              .pop-up4 h2 {
+                text-align: center;
+                font-family: "Microsoft Yahei";
+                font-size: 0.18rem;
+                font-weight: normal;
+                line-height: 0.3rem;
+                margin-bottom: 0.1rem;
+              }
+
+              .pop-up4 .text {
+                text-align: center;
+                color: #000;
+                line-height: 0.3rem;
+                margin-bottom: 0.1rem;
+                font-family: "Microsoft Yahei";
+              }
+
+              .pop-up4 .btn {
+                width: 40%;
+                height: 0.32rem;
+                line-height: 0.32rem;
+                border: none;
+                background: #fd9426;
+                color: #fff;
+                font-size: 0.14rem;
+                border-radius: 6px;
+                font-family: "Microsoft Yahei";
+                display: inline-block;
+                text-align: center;
+              }
+
+              .info-slider {
+                overflow: hidden;
+              }
+
+              .slideBox {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                margin: 0 auto;
+              }
+
+              .slideBox .hd1 {
+                position: absolute;
+                height: 28px;
+                line-height: 28px;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+              }
+
+              .slideBox .hd1 li {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                background: #333;
+                text-indent: -9999px;
+                overflow: hidden;
+                margin: 0 6px;
+              }
+
+              .slideBox .hd1 li.on {
+                background: #fff;
+              }
+
+              .slideBox .bd1 {
+                position: relative;
+                z-index: 0;
+              }
+
+              .slideBox .bd1 li {
+                position: relative;
+              }
+
+              .slideBox .bd1 li img {
+                width: 100%;
+                display: block;
+              }
+
+              .fixed {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: #fff;
+                padding: 0.1rem 0.1rem 0;
+                z-index: 9999;
+              }
+
+              .fixed h1 {
+                line-height: 0.26rem;
+                font-size: 20px !important;
+                line-height: 28px !important;
+                padding: 0 6px !important;
+              }
+
+              .fixed hr {
+                margin: 8px 0;
+              }
+
+              .article-content .text p,
+              .article-content .text div {
+                text-indent: 2em;
+                margin: 0 0 0.08rem 0;
+              }
+
+              .article-content img,
+              .article-content input,
+              .article-content td,
+              .article-content th {
+                text-indent: 0em !important;
+              }
+
+              @media only screen and (min-width:375px) {
+                html {
+                  font-size: 675%;
+                }
+
+                /*.permissions{background:#70aef7;padding:.062rem 4% .05rem;color:#fff;font-size:.15rem;overflow:hidden;line-height:2;}*/
+              }
+
+              @media only screen and (min-width:414px) {
+                html {
+                  font-size: 725%;
+                }
+              }
+
+              .permissions {
+                background: url(//m.steelphone.com/app/4.4/mask.png) no-repeat;
+                height: 120px;
+                background-size: 100% 100%;
+                padding: 2% 4% 1.5%;
+                overflow: hidden;
+              }
+
+              .permissions a {
+                color: #fff;
+                border: 1px solid #fff;
+                float: none;
+                border-radius: .3em;
+                padding: 0 2%;
+                line-height: 2;
+                display: inline-block;
+                margin-right: 10px;
+              }
+
+              .permissions a:hover {
+                color: #fff;
+              }
+
+              .permissions .center {
+                background: #70aef7;
+                height: 50px;
+                width: 70%;
+                margin: 30px auto 0;
+                border-radius: 8px;
+                color: #fff;
+                font: normal .9em/50px "Microsoft Yahei";
+                text-align: center;
+              }
+
+              .more {
+                display: inline-block;
+                width: 98%;
+                height: 40px;
+                line-height: 40px;
+                font-size: 1.1em;
+                font-family: "Microsoft Yahei";
+                color: #70aef7;
+                text-align: center;
+                border: 1px solid #70aef7;
+                border-radius: 10px;
+              }
+
+              .MsoListParagraph {
+                text-indent: 2em !important;
+              }
+
+              /*20191226淇敼锛屽鍔犵偣鍑籥pp鎸夐挳骞垮憡鍞ら啋app*/
+              .info {
+                font-size: 14px !important;
+                padding: 6px !important;
+                line-height: 1.8;
+                border-bottom: 1px dashed #bbb;
+                margin-bottom: .15rem;
+              }
+
+              .info time,
+              .info .source {
+                height: .22rem;
+                float: left;
+                overflow: hidden;
+              }
+
+              .info time {
+                max-width: 40%;
+                float: left;
+                margin-right: .2rem;
+              }
+
+              .info .source {
+                max-width: 38%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+
+              .info .app-btn {
+                padding: .03rem .05rem;
+                line-height: 1.2;
+                float: right;
+                font-size: .11rem;
+                color: #e51c23;
+                border: 1px solid #e51c23;
+                border-radius: 1rem;
+                display: none;
+              }
+
+              .app-bar {
+                width: 100%;
+                height: .45rem;
+                background: rgba(0, 0, 0, .5);
+                font-family: "Microsoft Yahei";
+                font-size: .6rem;
+                color: #fff;
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1000;
+                overflow: hidden;
+                display: none;
+              }
+
+              .app-bar * {
+                box-sizing: content-box;
+              }
+
+              .app-bar .app-logo {
+                width: .3rem;
+                height: .3rem;
+                float: left;
+                margin: .07rem .1rem 0 5%;
+                background: url(//a.mysteelcdn.com/oilchem/wap/detail/images/app_logo.png) no-repeat 0 0;
+                background-size: 100% 100%;
+              }
+
+              .app-bar .app-text {
+                width: 49%;
+                padding-top: .04rem;
+                line-height: 1.4;
+                float: left;
+              }
+
+              .app-bar .app-text h3 {
+                margin: 0;
+                font-size: .15rem;
+              }
+
+              .app-bar .app-text p {
+                margin: 0;
+                font-size: .12rem;
+              }
+
+              .app-bar .app-btn {
+                width: .9rem;
+                height: .26rem;
+                line-height: .26rem;
+                font-size: .14rem;
+                text-align: center;
+                background: #e51c23;
+                border-radius: .8rem;
+                border: 1px solid #a79f9f;
+                position: absolute;
+                right: .3rem;
+                top: .09rem;
+                z-index: 1;
+              }
+
+              .app-bar .app-close {
+                width: .2rem;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                z-index: 1;
+              }
+
+              .app-bar .app-close:after {
+                width: .09rem;
+                height: .09rem;
+                content: "";
+                display: block;
+                margin: .16rem .05rem 0 0;
+                background: url(//a.mysteelcdn.com/oilchem/wap/detail/images/app_close.png) no-repeat;
+                background-size: 100% 100%;
+              }
+
+              .weixin-pop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .3);
+                z-index: 999999;
+                display: none;
+              }
+
+              .weixin-pop .arrow {
+                width: .6rem;
+                height: 1rem;
+                position: absolute;
+                top: .05rem;
+                right: .1rem;
+                z-index: 999999;
+                background: url(//a.mysteelcdn.com/oilchem/wap/detail/images/line_arrow.png) no-repeat 0 0;
+                background-size: 100% 100%;
+              }
+
+              .weixin-pop .tip-box {
+                width: 92%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin: 1.2rem -46%;
+                background: #f9f9f9;
+                border-radius: .08rem;
+                font-family: "Microsoft Yahei";
+              }
+
+              .weixin-pop .tip-con {
+                padding: .17rem .25rem;
+                line-height: 1.6;
+                font-size: .15rem;
+                text-align: left;
+              }
+
+              .weixin-pop .tip-con p:nth-child(2) {
+                margin-top: .1rem;
+              }
+
+              .weixin-pop .tip-con .dot {
+                width: .3rem;
+                display: inline-block;
+                border: 1px solid #c8c8c8;
+                border-radius: 5px;
+                margin: 0 .05rem;
+                font-size: .12rem;
+                font-weight: 600;
+                text-align: center;
+              }
+
+              .weixin-pop .tip-con .sure {
+                padding: .02rem .05rem;
+                margin: 0 .05rem;
+                color: #e51c23;
+                border: 1px solid #c8c8c8;
+                border-radius: 5px;
+              }
+
+              .weixin-pop .tip-btn {
+                height: 48px;
+                line-height: 48px;
+                font-size: .16rem;
+                color: #e51c23;
+                text-align: center;
+                border-top: 1px solid #dcdcdc;
+                cursor: pointer;
+              }
+
+              .toast-box {
+                width: 100%;
+                position: fixed;
+                top: 40%;
+                text-align: center;
+                z-index: 999999;
+                display: none;
+              }
+
+              .toast-box .toast-msg {
+                color: #fff;
+                background-color: rgba(0, 0, 0, .7);
+                padding: 10px 20px;
+                border-radius: 5px;
+              }
+
+              /*20191226淇敼end*/
+
+              .comment .c-left .chief-ico {
+                display: block;
+                position: absolute;
+                bottom: -.05rem;
+                background: url(../images/chief.png) no-repeat 0 0;
+                background-size: 100% 100%;
+                width: .485rem;
+                height: .135rem;
+              }
+
+              .comment .reply-text {
+                background: #f4f4f4;
+                font-size: .125rem;
+                color: #999;
+                padding: .05rem;
+                line-height: 1.5;
+                margin-top: .05rem;
+              }
+
+              .comment .reply-btn {
+                border: 1px solid #4F97EF;
+                border-radius: .5rem;
+                font-size: .12rem;
+                color: #4F97EF;
+                line-height: 1.6;
+                text-align: center;
+                overflow: hidden;
+                position: absolute;
+                width: .45rem;
+                right: 5%;
+              }
+
+              .comment .comment-text p {
+                display: block;
+                max-height: .93rem;
+                overflow: hidden;
+              }
+
+              .comment .comment-text .show-all {
+                position: relative;
+                height: .22rem;
+                text-align: right;
+                display: none;
+              }
+
+              .comment .comment-text .show-all i {
+                font-style: normal;
+                border: 1px solid #999;
+                color: #999;
+                border-radius: .5rem;
+                font-size: .11rem;
+                width: .45rem;
+                text-align: center;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                bottom: .01rem;
+                line-height: 1.4;
+                overflow: hidden;
+              }
+
+              .comment .comment-text .show-all i::after {
+                position: relative;
+                width: .085rem;
+                height: .085rem;
+                margin-left: .01rem;
+                content: "";
+                display: inline-block;
+                background: url(../images/arrow_down.png) no-repeat 0 0;
+                background-size: 100% 100%;
+              }
+
+              .publish-fixed {
+                border-top: 1px solid #ccc;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                z-index: 999;
+                width: 100%;
+                background: #f0f0f0;
+                text-align: center;
+                padding: .05rem 1%;
+              }
+
+              .publish-fixed .comment-input {
+                background: #fff;
+                width: 33%;
+                border-radius: .05rem;
+                border: none;
+                outline: none;
+                padding: .06rem .1rem;
+                font: 0.12rem/1.5 "Microsoft Yahei";
+                display: inline-block;
+                position: relative;
+                top: -.05rem;
+              }
+
+              .publish-fixed i {
+                display: inline-block;
+                width: .3rem;
+                height: .3rem;
+                position: relative;
+                top: .05rem;
+              }
+
+              .publish-fixed .f-icon1 {
+                background: url(../images/comment.png) no-repeat 0 0;
+                background-size: 100% 100%;
+                margin-left: .05rem;
+              }
+
+              .publish-fixed .f-icon2 {
+                background: url(../images/star.png) no-repeat 0 0;
+                background-size: 100% 100%;
+              }
+
+              .publish-fixed .f-icon3 {
+                background: url(../images/txt.png) no-repeat 0 0;
+                background-size: 100% 100%;
+                margin-right: .05rem;
+              }
+
+              .publish-fixed .f-icon4 {
+                background: url(../images/feedback_btn.png) no-repeat 0 0;
+                background-size: 100% 100%;
+                width: .54rem;
+                height: .25rem;
+                top: .03rem;
+              }
+
+
+              /*寮瑰嚭妗�*/
+              .background {
+                position: fixed;
+                _position: absolute;
+                z-index: 100001;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                _width: expression(document.documentElement.clientWidth);
+                height: 100%;
+                _height: expression(document.documentElement.clientHeight);
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, .7);
+              }
+
+              .webox {
+                position: fixed;
+                _position: absolute;
+                z-index: 100002;
+                background: #fff;
+                border-radius: 6px;
+              }
+
+              #inside {
+                background-color: #FFFFFF;
+                max-height: 600px;
+                overflow: hidden;
+                border-radius: 6px;
+              }
+
+              #inside h1 {
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                color: #ca2d1e;
+                text-align: center;
+                display: block;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 10px;
+                height: 50px;
+                padding-left: 15px;
+                background: #fff;
+                font-weight: normal;
+                cursor: move;
+                font: bold 20px/50px 'Microsoft Yahei';
+              }
+
+              #inside h1 a {
+                position: absolute;
+                display: block;
+                right: 15px;
+                margin-top: 15px;
+                top: 0px;
+                font-size: 14px;
+                background: url(../images/icon.png) no-repeat 0 -12px;
+                width: 20px;
+                height: 20px;
+                background-size: 43px 340px;
+                cursor: pointer;
+                display: inline-block;
+              }
+
+              #inside h1 i {
+                background: url(../images/icon.png) no-repeat 0 0;
+                width: 56px;
+                height: 56px;
+                display: inline-block;
+                margin: 0 15px -20px 0
+              }
+
+              #inside h1 .winIcon {
+                background-position: 0 -323px;
+              }
+
+              #inside h1 .errorIcon {
+                background-position: 0 -263px;
+              }
+
+              #inside .mTop50 {
+                padding-top: 50px;
+              }
+
+              #inside p.text {
+                font-size: 18px;
+                text-align: center;
+                padding: 30px 0;
+              }
+
+              #inside .formBox {
+                width: 460px;
+                margin: 0 auto;
+              }
+
+              #inside .form-item {
+                overflow: hidden;
+                zoom: 1;
+                margin-bottom: 20px;
+              }
+
+              #inside .form-item dt {
+                float: left;
+                font-size: 18px;
+                line-height: 38px;
+              }
+
+              #inside .form-item dd {
+                width: 354px;
+                float: right;
+
+                vertical-align: middle;
+              }
+
+              #inside .form-item dd .areaBor {
+                border: 1px solid #b5b5b5;
+                height: 22px;
+                line-height: 22px;
+                overflow: hidden;
+                padding: 8px 10px;
+              }
+
+              #inside .form-item dd .form-text {
+                border: none;
+                height: 22px;
+                line-height: 22px;
+                font-size: 16px;
+                width: 220px;
+              }
+
+              #inside .form-item dd .checkTip {
+                color: #fe2724;
+                text-align: right;
+              }
+
+              #inside .form-item dd .codeBor {
+                width: 228px;
+                display: inline-block;
+              }
+
+              #inside .form-item dd .codeBor .form-text {
+                width: 120px;
+              }
+
+              #inside .form-item dd .codeBtn {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 16px;
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #cc2a1b;
+                margin: -32px 0 0 3px;
+                color: #cc2a1b;
+                cursor: pointer;
+                background: #fff;
+              }
+
+              #inside .btnBox {
+                width: 460px;
+                margin: 30px auto 10px;
+                text-align: center;
+              }
+
+              #inside .btnBox .button {
+                width: 120px;
+                height: 36px;
+                margin-right: 35px;
+                cursor: pointer;
+                background: #cc2b1c;
+                color: #fff;
+                display: inline-block;
+                text-align: center;
+                font: 16px/36px 'Microsoft Yahei';
+                border: 3px solid #fff;
+                box-shadow: 0 0 8px #ccc;
+              }
+
+              #inside .btnBox .button:hover {
+                box-shadow: 0 0 8px #999;
+              }
+
+              #inside .gray {
+                color: #999;
+                display: inline-block;
+                line-height: 40px;
+              }
+
+              .replyBtn {
+                float: right;
+                display: inline-block;
+                font-size: 16px;
+                width: 50px;
+                line-height: 24px;
+                height: 24px;
+                color: #50a1ff;
+                border: 1px solid #50a1ff;
+                border-radius: 12px;
+                text-align: center;
+              }
+
+              .replyBtn:active {
+                color: #cae1fb;
+                border: 1px solid #cae1fb;
+              }
+
+              .downloadBtn {
+                display: inline-block;
+                font-size: 16px;
+                width: 100%;
+                line-height: 40px;
+                height: 40px;
+                color: #50a1ff;
+                text-align: center;
+                margin: 10px auto;
+                border-top: 1px solid #ccc;
+              }
+
+              .mzsm {
+                margin: 10px 0;
+                position: relative;
+              }
+
+              .mzsm p {
+                margin: 10px 0;
+                display: -webkit-box !important;
+                overflow: hidden;
+                color: #707172;
+                font: 0.12rem/0.19rem "??";
+              }
+
+              .hidemore {
+                text-overflow: ellipsis;
+                word-break: break-all;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+              }
+
+              .mzsm .showmore {
+                display: inline-block;
+                width: 0.6rem;
+                height: 0.18rem;
+                font-size: 14px;
+                text-align: right;
+                position: absolute;
+                vertical-align: bottom;
+                bottom: 0;
+                right: 0;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAUCAYAAADPym6aAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAnNJREFUeNq8V11u3jAME4Ni69qv979hL7DXAaysf2fPcVoXqZM4okVSCr7//rsg8kt0APKu4w+oA/Kh49OGQIe89Px1AS8IdcgX9FwffondY9c+RPjZa+Bd53/b+pA3efC49AWig7B/9S/1B3WdOke7otEhp3xinZAx4U/ao/QlUcsQ8vhxYb0+QzEUdk4PFBk37TBQMW9YEhdsCQ2YfrP+wm43ZAdwyMWE4Bs/g5eAyPmAQ/V5xyZ0GLUADeC64E+TJ4BU6pkUWdHF24GO33Z7bfQE5qBzM4xOnFzCRP88kBVcamDFoOdE0Z8ypcEOLbSTKbINYAmJCVGOcOttanxj2IWMO2Tj53CRR4CLXKjEIdJmCbRJ8IhAIiMp9go4SN4Csf1FII6tRsxBJjsDxDA9p+MZjVTYRMjddSw545tLSAqXpfcGsbLpKgklxUo4Y78ZlpSLDmttjUYaGPVj2LM7QVEy4rex9LNuwymxtyARug3vIaSSEH500y5zH5gacqVw4+apjCDtl2x1G/9ZtcFwcAihMUhLCVk5S3nS+eDz1OpXDBt2R6KzXtq5mLWCJXrZhBO8GgCPZiRPsr3oGm96IGW4WtRLwagsEbxpx0y5GgXw+ZJ4lZTxP6mZrdU9CmYDEnpCtVlp4kE6VIvydFaurYna/B+cDEd2wgwplDVV1AkqM+tCydt4xn5vLpTKLhFzpKL0wrKI3gRmt4IgH7e1H84IWiisHtGZxdHVymZVvH9rrJrBnYDMLoVHqAV2D4ut3QVRZWK6W8mXqH5g9jRpcahvFcgpajlJbtSi9CdX9lc30Jy1Pyo+qsCzO5lnjx8BBgDN4ttqymiVLAAAAABJRU5ErkJggg==)
+              }
+
+              .mzsm .clicked {
+                bottom: -0.2rem;
+              }
+
+              .text .kefu,
+              .text .kefu a {
+                color: #2D8CF0;
+              }
+
+              body.darkMode,
+              .darkMode .fixed {
+                background: #000;
+                color: #c9c9c9;
+              }
+
+              .darkMode .article-content .info {
+                color: #474747;
+                border-bottom: 1px dashed #2d2d2d;
+              }
+
+              .darkMode .text .kefu,
+              .darkMode .text .kefu a {
+                color: #3b93f0;
+              }
+
+              .darkMode .article-content .text {
+                color: #c9c9c9 !important;
+              }
+
+              .darkMode .article-content .text table,
+              .darkMode .article-content .text td,
+              .darkMode .article-content .text th,
+              .darkMode .article-content .text span,
+              .darkMode .article-content .text p {
+                color: #c9c9c9 !important;
+                background: none !important;
+              }
+
+              #content{
+                  overflow: auto;
+              }
+
+            .ellipsis-3{
+                height: .5rem;
+                overflow: hidden;
+                display: -webkit-box;
+                white-space: normal!important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            .padding-bottom-50{
+                padding-bottom: 50px;
+            }
+            .no-rs{
+                position: relative;
+            }
+            .read-more{
+                float: right;
+                padding:0 8px ;
+                line-height: 24px;
+                color: #666;
+            }
+            .ad-content {
+                padding: 0 4%;
+            }
+
+            .ad-content .title:before {
+                width: 4px;
+                height: 16px;
+                display: inline-block;
+                content: '';
+                background: #e51c23;
+                position: relative;
+                vertical-align: middle;
+                margin-right: 5px;
+                top: -.015rem;
+            }
+            .ad-content ul a{
+              text-decoration: none;
+              color: #333;
+              display: block;
+              overflow: hidden;
+            }
+            .ad-content ul li img.left{
+                width: 30%;
+                height: 100%;
+                float: left;
+            }
+            .ad-content ul li{
+                height: .52rem;
+                margin-bottom: 10px;
+                font-size: 0.14rem;
+                color: #555;
+            }
+            .ad-content ul li div.right{
+                width: 68%;
+                overflow: hidden;
+                float: right;
+                line-height: 1.25;
+                display: -webkit-box;
+                white-space: normal!important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-align: justify;
+            }
+        
+        </style>
+       
+        
+    </head>
+    <body class="lzwap">
+        <section class="article-content">
+        <section class="text" id="text">
+            <div id="content">
+                <p style="text-align: center; margin-top: 5px;"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong>华南地区民用气主流成交区间表</strong> </span></p><p style="text-align: right;"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong>单位：元/吨</strong></span></p><table width="100%" width="100%" align="center" style="border-collapse: collapse;" border="1"><tbody><tr class="firstRow"><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong>地区</strong></span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; white-space: normal; background-color: rgb(255, 255, 255);">9月10日</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong>9月11日</strong></span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong>涨跌</strong></span></td></tr><tr><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;">广州地区国产</span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);">2898-2820</span></span></span></span></span></span></span></span></span></span></span><br/></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);">2898-2850</span></span></span><br/></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><p><span style="font-size:16px">0/+30</span></p></td></tr><tr><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;">粤东地区</span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><p><span style="font-family:宋体, SimSun"><span style="font-size: 16px;"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);">2800-2850</span></span></span></span></span></span></span></span></span></p></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><p><span style="font-family:宋体, SimSun"><span style="font-size: 16px;"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="text-align: -webkit-center; background-color: rgb(255, 255, 255);">2800-2850</span></span></span></span></span></p></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><p><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);">0/0</span><br/></p></td></tr><tr><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;">粤西地区（包括广西）</span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><span style="font-family: 宋体, SimSun; font-size: medium; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);">2890-3000</span></span></span></span></span></span></span></span></span></span></span></span></span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;"><span style="font-family: 宋体, SimSun; font-size: medium; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);">2800-3000</span></span></span></span></span></span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><p><span style="font-family:宋体;font-size:16px"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: 宋体; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);">-90/0</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p></td></tr><tr><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: 宋体, SimSun; font-size: 16px;">广州码头</span></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family:宋体, SimSun;font-size:16px"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);">2780-2830</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br/></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family:宋体, SimSun;font-size:16px"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: 16px; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);">2820-2850</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br/></td><td width="25%" align="center" valign="middle" style="border-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family:simsun;font-size:16px"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-family: simsun; font-size: medium; text-align: -webkit-center; background-color: rgb(249, 249, 249);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);"><span style="font-size: medium; text-align: -webkit-center; background-color: rgb(255, 255, 255);">+40/+20</span></span></span></span></span></span></span></span></span></span></span></span></span></td></tr></tbody></table><p style="text-align: right;"><span style="font-family: 宋体, SimSun; font-size: 16px;"><strong>来源：隆众资讯</strong></span></p><p style="text-indent: 32px; margin-top: 5px;"><span style="font-family: 宋体, SimSun;"><span style="text-indent: 32px; font-family: 宋体, SimSun;"><span style="font-family: 宋体, SimSun; text-indent: 32px;">隆众资讯9月11日报道：今日华南市场价格震荡，主营单位高位持稳，仅部分地区价格回调；码头方面卸货压力释放后普遍心态坚挺，今日小幅推涨。市场购销氛围尚可。近期消息面支撑有限，炼厂高位撑市稳定业者心态，鉴于前期码头价格较低，周末或有继续推涨可能。</span></span></span></p>
+            </div>
+        </section>
+        </section>
+    </body>
+    <script type="text/javascript">
+        document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '100%'
+    </script>
+</html>

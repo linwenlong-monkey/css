@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>按钮动画</title>
+    <style type="text/css">
+        div {
+            background-color: red;
+            color: white;
+            border-radius: 4px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+
+        }
+
+        span {
+            transition: 1.0s;
+            display: inline-block;
+        }
+
+        span.last {
+            opacity: 0;
+
+        }
+
+        div:hover span.first{
+
+        }
+
+        div:hover span.last {
+            opacity: 1;
+            padding-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>按钮动画</h1>
+    <div>
+      <span class="first">Hover</span>
+      <span class="last">>></span>
+    </div>
+</body>
+</html>

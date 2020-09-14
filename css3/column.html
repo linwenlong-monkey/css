@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>多列</title>
+	<style type="text/css">
+
+		/*
+		cloumn:
+			column-count:分成几列;
+			column-grap:多列之间的空隙;
+			column-rule-style:列和列之间的边框;
+			column-rule-width:边框厚度;
+			column-rule-color:边框颜色;
+
+			像border的设置：宽度，样式，颜色
+			column-rule: column-rule-width column-rule-style  column-rule-color;
+
+			column-span:指定元素跨越多少列;
+
+			指定了column-count的时候，再指定column-width会没有效果，因为设置了count宽度已经等分计算
+			column-width:指定列宽; 
+
+		*/
+
+		div.newspaper {
+			--webkit-column-count: 3;
+			--moz-column-count: 3;
+			/*column-count: 3;*/
+			column-gap: 30px;
+			column-rule-style: solid;
+			column-rule-width: 1px;
+			column-rule-color: red;
+			column-rule: 2px dotted yellow;
+			column-width: 100px;
+		}
+		h1 {
+			/*指定元素跨越多少列*/
+			column-span: all;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="newspaper">
+	<h1>英国维斯米斯特教堂碑文</h1>
+“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”
+</div>
+
+</body>
+</html>
