@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex实战</title>
+	<style type="text/css">
+	/*
+		nth-child 属于其父元素的第二个子元素的每个 p 的背景色：
+	*/
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background-color: black;
+	}
+
+	h3 {
+		margin: 30px 30px;
+		color:  white;
+	}
+
+	div.flex {
+		display: flex;
+		border-radius: 3px;
+		background-color: white;
+		width: 135px;
+		height: 135px;
+		justify-content: space-evenly;
+	}
+
+
+	.item {
+		background-color: black;
+		width: 25px;
+		height: 25px;
+		border-radius: 15px;
+		margin: 10px 10px;
+	}
+
+	/*设置一个点的first*/
+
+	#father {
+		background-color: black;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	/*左*/
+	div.leftTop {
+		align-items: flex-start;
+	}
+
+	div.leftCenter {
+		align-items: center;
+	}
+
+	div.leftBottom {
+		align-items: flex-end;
+	}
+
+	/*中*/
+	div.centerTop {
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	div.center {
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.centerBottom {
+		justify-content: center;
+		align-items: flex-end
+	}
+
+	/*右*/
+
+	div.rightTop {
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
+
+	div.rightCenter {
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	div.rightBottom {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+
+	</style>
+	
+</head>
+<body>
+	
+
+
+	
+	<h3 >1、一个点</h3>
+	<div class="flex" id="father">
+		<!-- 左上 -->
+		<div class="flex leftTop">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 左中 -->
+		<div class="flex leftCenter">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 左下 -->
+		<div class="flex leftBottom">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 中上 -->
+		<div class="flex centerTop">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 中 -->
+		<div class="flex center">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 中下 -->
+		<div class="flex centerBottom">
+			<div class="item">
+				
+			</div>
+		</div>
+
+				<!-- 右上 -->
+		<div class="flex rightTop">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 右中 -->
+		<div class="flex rightCenter">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<!-- 右下 -->
+		<div class="flex rightBottom">
+			<div class="item">
+				
+			</div>
+		</div>
+
+		
+
+	</div>
+
+	<h3 >2、两个点</h3>
+
+	<div class="flex" id = "father">
+		<div class="flex">
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+		
+		</div>
+
+		<div class="flex" style="align-items: flex-start; flex-direction: column;">
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+		</div>
+
+
+		<div class="flex" style="align-items: center; flex-direction: column;">
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<div class="flex" style="align-items: flex-end; flex-direction: column;">
+			<div class="item">
+				
+			</div>
+			<div class="item">
+				
+			</div>
+		</div>
+
+		<div class="flex" style="align-items: flex-start; flex-direction: row; justify-content: flex-start;">
+			<div class="item">
+				
+			</div>
+			<div class="item" style="align-self: center;">
+				
+			</div>
+		</div>
+
+		<div class="flex" style="align-items: flex-start; flex-direction: row; justify-content: space-around;">
+			<div class="item">
+				
+			</div>
+			<div class="item" style="align-self: flex-end;">
+				
+			</div>
+		</div>
+
+	</div>
+
+
+	<h3 >3、其他</h3>
+
+	<div class="flex" id = "father">
+		<div class="flex" style="justify-content: space-between;">
+			<div class="item"></div>
+			<div class="item" style="align-self: center;"></div>
+			<div class="item" style="align-self: flex-end;"></div>
+		</div>
+
+		<div class="flex" style="align-content: space-between; justify-content: flex-end; flex-wrap: wrap; flex-direction: row;">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item" ></div>
+			<div class="item" style="align-self: flex-start;" ></div>
+		</div>
+
+		<div class="flex" style="flex-direction: column; justify-content: space-between;">
+			<div class="row flex" style="width: 100%; height: 50px;  justify-content: space-between;">
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style="width: 100%; height: 50px ;justify-content: space-between;">
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>	
+		</div>
+
+		<div class="flex" style="flex-direction: column; justify-content: space-between;">
+			<div class="row flex" style="width: 100%; height: 50px;  justify-content: space-around;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style="width: 100%; height: 50px ;justify-content: space-around;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>	
+		</div>
+
+		<div class="flex" style="flex-direction: row; justify-content: space-between;">
+			<div class="row flex" style="flex-direction: column; width: 50px; height: 100%;  justify-content: space-around;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style="flex-direction: column; width: 50px; height: 100% ;justify-content: space-around;" >
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>	
+		</div>
+
+		<div class="flex" style="flex-direction: column; justify-content: space-between;">
+			<div class="row flex" style=" height: 45px; flex-direction: row; justify-content: space-around;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style=" height: 45px; flex-direction:row; justify-content: center;">
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style=" height: 45px; flex-direction: row; justify-content: space-between;">
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+		</div>
+
+		<div class="flex" style="flex-direction: column; justify-content: space-between;">
+			<div class="row flex" style=" height: 45px; flex-direction: row; justify-content: space-around;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style=" height: 45px; flex-direction:row; justify-content: center;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+			<div class="row flex" style=" height: 45px; flex-direction: row; justify-content: space-between;">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

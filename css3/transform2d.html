@@ -13,7 +13,7 @@
 			旋转:rotate(angle deg);
 			缩放:scale(w的放大倍数,h的方法倍数);
 
-
+			2d:;
 			matrix(n,n,n,n,n,n)	定义 2D 转换，使用六个值的矩阵。
 			translate(x,y)	定义 2D 转换，沿着 X 和 Y 轴移动元素。
 			translateX(n)	定义 2D 转换，沿着 X 轴移动元素。
@@ -25,6 +25,23 @@
 			skew(x-angle,y-angle)	定义 2D 倾斜转换，沿着 X 和 Y 轴。
 			skewX(angle)	定义 2D 倾斜转换，沿着 X 轴。
 			skewY(angle)	定义 2D 倾斜转换，沿着 Y 轴。
+
+			3d:
+
+			translate3d(x,y,z)	定义 3D 转化。
+			translateX(x)	定义 3D 转化，仅使用用于 X 轴的值。
+			translateY(y)	定义 3D 转化，仅使用用于 Y 轴的值。
+			translateZ(z)	定义 3D 转化，仅使用用于 Z 轴的值。
+			scale3d(x,y,z)	定义 3D 缩放转换。
+			scaleX(x)	定义 3D 缩放转换，通过给定一个 X 轴的值。
+			scaleY(y)	定义 3D 缩放转换，通过给定一个 Y 轴的值。
+			scaleZ(z)	定义 3D 缩放转换，通过给定一个 Z 轴的值。
+			rotate3d(x,y,z,angle)	定义 3D 旋转。
+			rotateX(angle)	定义沿 X 轴的 3D 旋转。
+			rotateY(angle)	定义沿 Y 轴的 3D 旋转。
+			rotateZ(angle)	定义沿 Z 轴的 3D 旋转。
+			perspective(n)	定义 3D 转换元素的透视视图。;
+
 
 		*/
 
@@ -42,6 +59,7 @@
 
 		div.xangle:hover {
 			transform: rotateY(120deg);
+
 		}
 
 	</style>
