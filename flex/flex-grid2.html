@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		div.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 200px;
+			margin: 20px 20px;
+			border-radius: 3px;
+		}
+
+		div.content .row {
+			flex-basis: 30%;
+			display: flex;
+			justify-content: space-around;
+			
+			
+		}
+
+
+		div.content .row .item {
+			background-color: #eee;
+			border-radius: 3px;
+			margin: 0px 5px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="content">
+		<div class="row">
+			<div class="item" style="flex-basis: 50%"></div>
+			<div class="item" style="flex-grow: 1"></div>
+			<div class="item" style="flex-grow: 1"></div>
+		</div>
+		<div class="row">
+			<div class="item" style="flex-grow: 1"></div>
+			<div class="item" style="flex-basis: 33%"></div>
+		</div>
+		<div class="row">
+			<div class="item" style="flex-basis: 25%"></div>
+			<div class="item" style="flex-grow: 1; flex-shrink: 1"></div>
+			<div class="item" style="flex-basis: 33%"></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
