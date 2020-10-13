@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		伪元素
+	</title>
+	<style type="text/css">
+		p::first-letter {
+			color: pink;
+			content:"asd";
+		}
+
+		p::first-line {
+			color: red;
+			content:"asdasdasdas";
+		}
+		/*选中的文本*/
+		p::selection {
+			color: blue;
+		}
+
+		p::before {
+			content: "before";
+			display: block;
+		}
+		p::after {
+			content: "after";
+			display: block;
+		}
+
+		p:nth-child(2)::first-line {
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<p>伪元素化现象(Pseudo-anglicism),指的是英语之外的语言中出现的一些词语类似英语,实际上却不是英语的现象。马修·安德森表示,一些人仍然对现象此表示担忧。</p>
+	<p>伪元素化现象(Pseudo-anglicism),指的是英语之外的语言中出现的一些词语类似英语,实际上却不是英语的现象。马修·安德森表示,一些人仍然对现象此表示担忧。</p>
+	<p>伪元素化现象(Pseudo-anglicism),指的是英语之外的语言中出现的一些词语类似英语,实际上却不是英语的现象。马修·安德森表示,一些人仍然对现象此表示担忧。</p>
+</body>
+</html>

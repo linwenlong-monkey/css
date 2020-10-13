@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		属性选择器
+	</title>
+	<style type="text/css">
+		/*包含type属性的li元素*/
+		li[type] {
+			color: red;
+		}
+		/* 获取 属性等于某个值的 元素 属性值 可以使用 引号进行包裹 */
+		li[type='vegetable'] {
+			color: green;
+		}
+		/* 使用空格分隔的 多个属性 其中有某个属性即可获取 */
+		li[type~='hot'] {
+			color: pink;
+		}
+		/* 获取以某个属性开头的语法  */
+		li[color^="green"] {
+			color: orange;
+		}
+
+		/* 获取以某个属性结尾的语法  */
+		li[type$='t'] {
+			color: darkgray;
+		}
+
+		/* 获取 属性中 拥有某个值的 元素 */
+		li[price*='ea'] {
+			color: yellow;
+		}
+		/*  如果属性的值 只有very 也能够获取  用来获取 多个属性 并且 使用'-'连接 */
+		li[price|='very'] {
+			color: #f4f4f4;
+		}
+
+	</style>
+</head>
+<body>
+	<ul>
+	  <li type='fruit' color='green'>西瓜</li>
+	  <li type='vegetable' color='greenyellow'>西兰花</li>
+	  <li type='meat'>牛肉</li>
+	  <li type='meat hot'>猪肉</li>
+	  <li type='drink hot'>可乐</li>
+	  <li type='drink hot'>雪碧</li>
+	  <li price='very-cheap'>红酒</li>
+	  <li price='very'>白酒</li>
+	  <li price='verygrood'>米酒</li>
+	</ul>
+</body>
+</html>

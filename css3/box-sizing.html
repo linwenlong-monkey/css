@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			padding: 50px 50px;
+			background-color: red;
+		}
+
+		div:first-child {
+			box-sizing: border-box;
+			margin-bottom: 100px;
+		}
+
+		div:nth-child(2) {
+			box-sizing: content-box;
+			margin-top: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>盒子1</div>
+	<div>盒子2</div>
+</body>
+</html>

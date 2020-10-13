@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>target伪类</title>
+	<link rel="shortcut icon" type="text/css" href="favicon.ico">
+	<style type="text/css">
+		p:target {
+			border: 1px solid #123;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 通过设置锚点来使用 -->
+	<p>
+		<a href="#one">第一段</a>
+	</p>
+	<p>
+		<a href="#two">第二段</a>
+	</p>
+
+
+	<p id="one">这是第一段内容</p>
+	<p id="two">这是第二段内容</p>
+
+</body>
+</html>
